@@ -1,22 +1,15 @@
-let score = Number(prompt('Enter your score:'));
-
-let grade;
+const score = Number(prompt('Enter your score:'));
 
 if (score >= 0 && score <= 39) {
-  grade = 0;
-} else if (score >= 40 && score <= 51) {
-  grade = 1;
-} else if (score >= 52 && score <= 63) {
-  grade = 2;
-} else if (score >= 64 && score <= 75) {
-  grade = 3;
-} else if (score >= 76 && score <= 87) {
-  grade = 4;
-} else if (score >= 88 && score <= 100) {
-  grade = 5;
-} else {
-  grade = 'Invalid score';
+  document.write('<p>Your grade is 0.</p>');
+} else if (score <= 51) {
+  document.write('<p>Your grade is 1.</p>');
+} else if (score <= 63) {
+  document.write('<p>Your grade is 2.</p>');
+} else if (score <= 75) {
+  document.write('<p>Your grade is 3.</p>');
+} else if (score <= 87) {
+  document.write('<p>Your grade is 4.</p>');
+} else if (score <= 100) {
+  document.write('<p>Your grade is 5.</p>');
 }
-
-document.getElementById('result').innerHTML = 'Your grade is: ' + grade;
-s;

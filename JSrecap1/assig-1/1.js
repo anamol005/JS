@@ -1,7 +1,8 @@
-let celsius = Number(prompt('Enter temperature in Celsius:'));
+const celsius = Number(prompt('Enter temperature in Celsius:'));
 
-let fahrenheit = (celsius * 9) / 5 + 32;
-let kelvin = celsius + 273.15;
+const fahrenheit = (celsius * 9) / 5 + 32;
+const kelvin = celsius + 273.15;
 
-document.getElementById('result').innerHTML =
-  'Fahrenheit: ' + fahrenheit + ' °F<br>' + 'Kelvin: ' + kelvin + ' K';
+document.write('<p>Celsius: ' + celsius + ' °C</p>');
+document.write('<p>Fahrenheit: ' + fahrenheit + ' °F</p>');
+document.write('<p>Kelvin: ' + kelvin + ' K</p>');
